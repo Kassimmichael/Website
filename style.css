@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Pacifico';
+  box-sizing: border-box;
+  background-color: rgb(209, 236, 247);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+#logo {
+  font-family: 'Pacifico';
+  text-decoration: none;
+  font-size: 40px;
+  color: blue;
+}
+
+.link a {
+  text-decoration: none;
+  color: blue;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+nav button {
+  border-radius: 20px;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 2px 15px #6b6bac;
+  transition: 5s;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  gap: 10;
+  padding: 20px 10%;
+}
+
+.item figure {
+  flex: 1;
+}
+
+.item .cta {
+  flex: 1;
+}
+
+.item figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.item figure .image {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+  justify-self: end;
+}
+
+ .item figure .image:hover {
+  animation: pulse .5s infinite alternate;
+}
+
+.item figure .image:nth-child(2) {
+  top: -20px;
+  justify-self: start;
+}
+
+.item figure .image:nth-child(4) {
+  top: -20px;
+  justify-self: start;
+}
+
+.item .cta {
+  padding: 0px 20px;
+}
+
+.item .cta h1 {
+  color: #0d0d3f;
+  font-size: 4rem;
+}
+
+.item .cta h1 span {
+  color: blue;
+  /* background-color: #0d0d3f; */
+}
+
+.item .cta p {
+  font-size: 22px;
+  padding: 12px 0;
+  color: #6b6bac;
+}
+
+.item .cta button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #6b6bac;
+  color: #fff;
+  box-shadow: 0 2px 20px #6b6bac;
+}
+
+
+
